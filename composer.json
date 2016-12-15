@@ -2,7 +2,9 @@
     "require": {
         "googleads/googleads-php-lib": "8.*",
         "google/apiclient": "1.0.*@beta",
-	"aws/aws-sdk-php": "2.8.9"
+	"aws/aws-sdk-php": "2.8.9",
+        "monolog/monolog": "^1.22",
+        "guzzlehttp/guzzle": "^6.2"
 
     },
     "autoload": {
