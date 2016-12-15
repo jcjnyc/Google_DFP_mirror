@@ -1,0 +1,20 @@
+{
+  "dimensions": [
+  		"AD_UNIT_ID",
+		"AD_UNIT_NAME",
+		 ],
+  "adUnitView": [
+  		"HIERARCHICAL"
+		],			
+  "columns": [
+  	     "TOTAL_INVENTORY_LEVEL_IMPRESSIONS",
+	     "TOTAL_LINE_ITEM_LEVEL_IMPRESSIONS"				
+
+ 		],
+  "dimensionAttributes": [
+			 ],
+  "dimensionFilters": [],
+  "statement": {},
+  "contentMetadataKeyHierarchyCustomTargetingKeyIds": [],
+  "timeZone": []
+}

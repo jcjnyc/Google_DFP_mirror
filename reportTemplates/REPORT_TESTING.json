@@ -1,0 +1,40 @@
+{ "dimensions": [
+  		"AD_UNIT_NAME",
+                "COUNTRY_NAME",
+		"ADVERTISER_NAME",
+		"ORDER_NAME",	
+		"LINE_ITEM_NAME",
+		"LINE_ITEM_TYPE",
+		"DEVICE_CATEGORY_NAME"
+		],
+  "adUnitView": ["TOP_LEVEL"],			
+  "columns": [	
+  	        "AD_SERVER_IMPRESSIONS",
+		"AD_SERVER_CLICKS", 
+		"AD_SERVER_CTR",
+		"AD_EXCHANGE_LINE_ITEM_LEVEL_IMPRESSIONS",
+		"AD_EXCHANGE_LINE_ITEM_LEVEL_CLICKS",
+		"ADSENSE_LINE_ITEM_LEVEL_IMPRESSIONS",
+		"ADSENSE_LINE_ITEM_LEVEL_CLICKS"
+ 		],
+  "dimensionAttributes": [
+			 "AD_UNIT_CODE",
+			 "ORDER_AGENCY",
+			 "ORDER_START_DATE_TIME",
+			 "ORDER_END_DATE_TIME",				    
+		    	 "LINE_ITEM_START_DATE_TIME",
+		    	 "LINE_ITEM_END_DATE_TIME",
+		    	 "LINE_ITEM_GOAL_QUANTITY",
+		    	 "LINE_ITEM_SPONSORSHIP_GOAL_PERCENTAGE",
+		    	 "LINE_ITEM_LIFETIME_IMPRESSIONS",
+		    	 "LINE_ITEM_LIFETIME_CLICKS",
+		    	 "LINE_ITEM_PRIORITY",
+		    	 "LINE_ITEM_CONTRACTED_QUANTITY",
+		    	 "LINE_ITEM_COST_PER_UNIT"
+			 ],
+  "dimensionFilters": [],
+  "statement": [],
+  "contentMetadataKeyHierarchyCustomTargetingKeyIds": [],
+  "timeZone": []
+
+}

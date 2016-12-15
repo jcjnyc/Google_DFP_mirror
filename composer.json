@@ -1,0 +1,21 @@
+{
+    "require": {
+        "googleads/googleads-php-lib": "8.*",
+        "google/apiclient": "1.0.*@beta",
+	"aws/aws-sdk-php": "2.8.9"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "lib\\": "lib",
+            "PHPExcel\\" : "vendor/phpoffice/phpexcel/Classes",
+            "Guzzle\\": "vendor/guzzle/guzzle/src/Guzzle"            
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+
+}

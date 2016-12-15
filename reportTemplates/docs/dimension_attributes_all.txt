@@ -1,0 +1,124 @@
+LINE_ITEM_LABELS	Represents LineItem.effectiveAppliedLabels as a comma separated list of Label.name for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_LABEL_IDS	Represents LineItem.effectiveAppliedLabels as a comma separated list of Label.id for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_OPTIMIZABLE	Generated as true for Dimension.LINE_ITEM_NAME which is eligible for optimization, false otherwise. Can be used for filtering.
+LINE_ITEM_DELIVERY_PACING	  Represents LineItem.deliveryRateType for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_FREQUENCY_CAP		  Represents LineItem.frequencyCaps as a comma separated list of "FrequencyCap.maxImpressions impressions per/every FrequencyCap.numTimeUnits FrequencyCap.timeUnit" (e.g. "10 impressions every day,500 impressions per lifetime") for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_RECONCILED_RATE	  Represents the monthly reconciled rate of the line item for Dimension.LINE_ITEM_NAME and Dimension.MONTH_AND_YEAR.
+ADVERTISER_EXTERNAL_ID		  Represents Company.externalId for Dimension.ADVERTISER_NAME.
+ADVERTISER_PRIMARY_CONTACT	  Represents name and email address in the form of name(email) of primary contact for Dimension.ADVERTISER_NAME.
+ORDER_START_DATE_TIME		  Represents Order.startDateTime for Dimension.ORDER_NAME. Can be used for filtering.
+ORDER_END_DATE_TIME		  Represents Order.endDateTime for Dimension.ORDER_NAME. Can be used for filtering.
+ORDER_EXTERNAL_ID		  Represents Order.externalOrderId for Dimension.ORDER_NAME.
+ORDER_PO_NUMBER			  Represents Order.poNumber for Dimension.ORDER_NAME. Can be used for filtering.
+ORDER_IS_PROGRAMMATIC		  Represents Order.orderIsProgrammatic for Dimension.ORDER_NAME. Can be used for filtering.
+ORDER_AGENCY			  Represents the name of Order.agencyId for Dimension.ORDER_NAME.
+ORDER_AGENCY_ID			  Represents Order.agencyId for Dimension.ORDER_NAME. Can be used for filtering.
+ORDER_LABELS			  Represents Order.effectiveAppliedLabels as a comma separated list of Label.name for Dimension.ORDER_NAME.
+ORDER_LABEL_IDS			  Represents Order.effectiveAppliedLabels as a comma separated list of Label.id for Dimension.ORDER_NAME.
+ORDER_TRAFFICKER		  The name and email address in the form of name(email) of the trafficker for Dimension.ORDER_NAME
+ORDER_TRAFFICKER_ID		  Represents Order.traffickerId for Dimension.ORDER_NAME. Can be used for filtering.
+ORDER_SECONDARY_TRAFFICKERS	  The names and email addresses as a comma separated list of name(email) of the Order.secondaryTraffickerIds for Dimension.ORDER_NAME.
+ORDER_SALESPERSON		  The name and email address in the form of name(email) of the Order.salespersonId for Dimension.ORDER_NAME.
+ORDER_SECONDARY_SALESPEOPLE	  The names and email addresses as a comma separated list of name(email) of the Order.secondarySalespersonIds for Dimension.ORDER_NAME.
+ORDER_LIFETIME_IMPRESSIONS	  The total number of impressions delivered over the lifetime of an Dimension.ORDER_NAME.
+ORDER_LIFETIME_CLICKS		  The total number of clicks delivered over the lifetime of an Dimension.ORDER_NAME.
+ORDER_LIFETIME_MERGED_IMPRESSIONS The lifetime impressions for Dimension.ORDER_NAME delivered by both DART and DoubleClick for Publishers ad servers. This is only available for networks that have been upgraded from the old to the new system.
+ORDER_LIFETIME_MERGED_CLICKS	  The lifetime clicks for Dimension.ORDER_NAME delivered by both DART and DoubleClick for Publishers ad servers. This is only available for networks that have been upgraded from the old to the new system.
+ORDER_BOOKED_CPM		  The cost of booking all the CPM ads for Dimension.ORDER_NAME.
+ORDER_BOOKED_CPC		  The cost of booking all the CPC ads for Dimension.ORDER_NAME.
+LINE_ITEM_START_DATE_TIME	  Represents LineItem.startDateTime for Dimension.LINE_ITEM_NAME. Can be used for filtering.
+LINE_ITEM_END_DATE_TIME		  Represents LineItem.endDateTime for Dimension.LINE_ITEM_NAME. Can be used for filtering.
+LINE_ITEM_EXTERNAL_ID		  Represents LineItem.externalId for Dimension.LINE_ITEM_NAME. Can be used for filtering.
+LINE_ITEM_COST_TYPE		  Represents LineItem.costType for Dimension.LINE_ITEM_NAME. Can be used for filtering.
+LINE_ITEM_COST_PER_UNIT		  Represents LineItem.costPerUnit for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_CURRENCY_CODE		  Represents the 3 letter currency code for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_GOAL_QUANTITY		  The total number of impressions, clicks or days that is reserved for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_SPONSORSHIP_GOAL_PERCENTAGE The ratio between the goal quantity for Dimension.LINE_ITEM_NAME of LineItemType.SPONSORSHIP and the LINE_ITEM_GOAL_QUANTITY. Represented as a number between 0..100.
+LINE_ITEM_LIFETIME_IMPRESSIONS	      The total number of impressions delivered over the lifetime of a Dimension.LINE_ITEM_NAME.
+LINE_ITEM_LIFETIME_CLICKS	      The total number of clicks delivered over the lifetime of a Dimension.LINE_ITEM_NAME.
+LINE_ITEM_LIFETIME_MERGED_IMPRESSIONS The lifetime impressions for Dimension.LINE_ITEM_NAME delivered by both DART and DoubleClick for Publishers ad servers. This is only available for networks that have been upgraded from the old to the new system.
+LINE_ITEM_LIFETIME_MERGED_CLICKS      The lifetime clicks for Dimension.LINE_ITEM_NAME delivered by both DART and DoubleClick for Publishers ad servers. This is only available for networks that have been upgraded from the old to the new system.
+LINE_ITEM_PRIORITY		      Represents LineItem.priority for Dimension.LINE_ITEM_NAME as a value between 1 and 16. Can be used for filtering.
+CREATIVE_OR_CREATIVE_SET	      Indicates if a creative is a regular creative or creative set. Values will be 'Creative' or 'Creative set'
+MASTER_COMPANION_TYPE		      The type of creative in a creative set - master or companion.
+LINE_ITEM_CONTRACTED_QUANTITY	      Represents the LineItem.contractedUnitsBought quantity for Dimension.LINE_ITEM_NAME.
+LINE_ITEM_DISCOUNT		      Represents the LineItem.discount for Dimension.LINE_ITEM_NAME. The number is either a percentage or an absolute value depending on LineItem.discountType.
+LINE_ITEM_NON_CPD_BOOKED_REVENUE      The cost of booking for a non-CPD Dimension.LINE_ITEM_NAME.
+ADVERTISER_LABELS		      Represents Company.appliedLabels as a comma separated list of Label.name for Dimension.ADVERTISER_NAME.
+ADVERTISER_LABEL_IDS		      Represents Company.appliedLabels as a comma separated list of Label.id for Dimension.ADVERTISER_NAME.
+CREATIVE_CLICK_THROUGH_URL	      Represents the click-through URL for Dimension.CREATIVE_NAME.
+CREATIVE_SSL_SCAN_RESULT	      Represents whether a creative is SSL-compliant.
+CREATIVE_SSL_COMPLIANCE_OVERRIDE      Represents whether a creative's SSL status was overridden.
+LINE_ITEM_CREATIVE_START_DATE	      Represents a LineItemCreativeAssociation.startDateTime for a Dimension.LINE_ITEM_NAME and a Dimension.CREATIVE_NAME. Includes the date without the time.
+LINE_ITEM_CREATIVE_END_DATE	      Represents a LineItemCreativeAssociation.endDateTime for a Dimension.LINE_ITEM_NAME and a Dimension.CREATIVE_NAME. Includes the date without the time.
+PROPOSAL_START_DATE_TIME	      Represents Proposal.startDateTime for Dimension.PROPOSAL_NAME.
+PROPOSAL_END_DATE_TIME		      Represents Proposal.endDateTime for Dimension.PROPOSAL_NAME.
+PROPOSAL_CREATION_DATE_TIME	      Represents Proposal.creationDateTime for Dimension.PROPOSAL_NAME. Can be used for filtering.
+PROPOSAL_SOLD_DATE_TIME		      Represents the sold time for Dimension.PROPOSAL_NAME.
+PROPOSAL_IS_SOLD		      Represents Proposal.isSold for Dimension.PROPOSAL_NAME. Can be used for filtering.
+PROPOSAL_PROBABILITY_TO_CLOSE	      Represents Proposal.probabilityToClose for Dimension.PROPOSAL_NAME.
+PROPOSAL_STATUS			      Represents Proposal.status for Dimension.PROPOSAL_NAME, including those post-sold status, e.g. DRAFT(SOLD). Can be used for filtering.
+PROPOSAL_ARCHIVAL_STATUS	      Represents Proposal.isArchived for Dimension.PROPOSAL_NAME. Can be used for filtering.
+PROPOSAL_CURRENCY		      Represents Proposal.currency for Dimension.PROPOSAL_NAME.
+PROPOSAL_EXCHANGE_RATE		      Represents Proposal.exchangeRate for Dimension.PROPOSAL_NAME.
+PROPOSAL_AGENCY_COMMISSION_RATE	      Represents Proposal.agencyCommission for Dimension.PROPOSAL_NAME.
+PROPOSAL_VAT_RATE		      Represents Proposal.valueAddedTax for Dimension.PROPOSAL_NAME.
+PROPOSAL_DISCOUNT		      Represents Proposal.proposalDiscount for Dimension.PROPOSAL_NAME.
+PROPOSAL_ADVERTISER_DISCOUNT	      Represents Proposal.advertiserDiscount for Dimension.PROPOSAL_NAME.
+PROPOSAL_ADVERTISER		      Represents the advertiser name of Dimension.PROPOSAL_NAME.
+PROPOSAL_ADVERTISER_ID		      Represents the advertiser id of Dimension.PROPOSAL_NAME.
+PROPOSAL_AGENCIES		      Represents the agency names as a comma separated string for Dimension.PROPOSAL_NAME.
+PROPOSAL_AGENCY_IDS		      Represents the agency ids as a comma separated string for Dimension.PROPOSAL_NAME.
+PROPOSAL_PO_NUMBER		      Represents Proposal.poNumber for Dimension.PROPOSAL_NAME.
+PROPOSAL_PRIMARY_SALESPERSON	      Represents name and email address in the form of name(email) of primary salesperson for Dimension.PROPOSAL_NAME.
+PROPOSAL_SECONDARY_SALESPEOPLE	      Represents name and email addresses in the form of name(email) of secondary salespeople as a comma separated string for Dimension.PROPOSAL_NAME.
+PROPOSAL_CREATOR		      Represents name and email address in the form of name(email) of creator for Dimension.PROPOSAL_NAME.
+PROPOSAL_SALES_PLANNERS		      Represents name and email addresses in the form of name(email) of Proposal.salesPlannerIds as a comma separated list string for Dimension.PROPOSAL_NAME.
+PROPOSAL_PRICING_MODEL		      Represents Proposal.pricingModel for Dimension.PROPOSAL_NAME.
+PROPOSAL_BILLING_SOURCE		      Represents Proposal.billingSource for Dimension.PROPOSAL_NAME.
+PROPOSAL_BILLING_CAP		      Represents Proposal.billingCap for Dimension.PROPOSAL_NAME.
+PROPOSAL_BILLING_SCHEDULE	      Represents Proposal.billingSchedule for Dimension.PROPOSAL_NAME.
+PROPOSAL_APPLIED_TEAM_NAMES	      Represents Proposal.appliedTeamIds as a comma separated list of Team.names for Dimension.PROPOSAL_NAME.
+PROPOSAL_APPROVAL_STAGE		      Represents the approval stage for Dimension.PROPOSAL_NAME.
+PROPOSAL_INVENTORY_RELEASE_DATE_TIME  Represents the inventory release date time for Dimension.PROPOSAL_NAME.
+PROPOSAL_LOCAL_BUDGET		      Represents Proposal.budget in local currency for Dimension.PROPOSAL_NAME.
+PROPOSAL_LOCAL_REMAINING_BUDGET	      Represents the remaining budget in local currency for Dimension.PROPOSAL_NAME.
+PROPOSAL_LINE_ITEM_START_DATE_TIME    Represents ProposalLineItem.startDateTime for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_END_DATE_TIME      Represents ProposalLineItem.endDateTime for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_RATE_TYPE	      Represents ProposalLineItem.rateType for Dimension.PROPOSAL_LINE_ITEM_NAME. Can be used for filtering.
+PROPOSAL_LINE_ITEM_COST_PER_UNIT      Represents ProposalLineItem.costPerUnit for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_LOCAL_COST_PER_UNIT		 Represents ProposalLineItem.costPerUnit in local currency for Dimension.PROPOSAL_LINE_ITEM_NAME. See PROPOSAL_LINE_ITEM_COST_PER_UNIT
+PROPOSAL_LINE_ITEM_COST_PER_UNIT_GROSS		 Represents gross cost per unit for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_LOCAL_COST_PER_UNIT_GROSS	 Represents gross cost per unit in local currency for Dimension.PROPOSAL_LINE_ITEM_NAME. See PROPOSAL_LINE_ITEM_COST_PER_UNIT_GROSS
+PROPOSAL_LINE_ITEM_TYPE_AND_PRIORITY		 Represents line item type (if applicable) and line item priority (if applicable) for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_SIZE				 Represents the size of ProposalLineItem.creativePlaceholders for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_ARCHIVAL_STATUS		 Represents ProposalLineItem.isArchived for Dimension.PROPOSAL_LINE_ITEM_NAME. Can be used for filtering.
+PROPOSAL_LINE_ITEM_PRODUCT_ADJUSTMENT		 Represents the product adjustment of Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_BUFFER			 Represents ProposalLineItem.unitsBoughtBuffer for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_TARGET_RATE_NET		 Represents the target rate (net) of Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_BILLING_SOURCE		 Represents ProposalLineItem.billingSource for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_BILLING_CAP			 Represents ProposalLineItem.billingCap for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_BILLING_SCHEDULE		 Represents ProposalLineItem.billingSchedule for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_GOAL_PERCENTAGE		 Represents ProposalLineItem.unitsBought for Dimension.PROPOSAL_LINE_ITEM_NAME The attribute is available only if ProposalLineItem.lineItemType is of type LineItemType.SPONSORSHIP, LineItemType.HOUSE, LineItemType.NETWORK, or LineItemType.BUMPER.
+PROPOSAL_LINE_ITEM_COST_ADJUSTMENT		 Represents ProposalLineItem.costAdjustment for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PROPOSAL_LINE_ITEM_COMMENTS			 Represents the comments for Dimension.PROPOSAL_LINE_ITEM_NAME.
+PRODUCT_TEMPLATE_RATE_TYPE			 Represents ProductTemplate.rateType for Dimension.PRODUCT_TEMPLATE_NAME.
+PRODUCT_TEMPLATE_STATUS				 Represents ProductTemplate.status for Dimension.PRODUCT_TEMPLATE_NAME.
+PRODUCT_TEMPLATE_TYPE_AND_PRIORITY		 Represents the line item type (if applicable) and line item priority (if applicable) of Dimension.PRODUCT_TEMPLATE_NAME.
+PRODUCT_TEMPLATE_PRODUCT_TYPE			 Represents ProductTemplate.productType for Dimension.PRODUCT_TEMPLATE_NAME.
+PRODUCT_TEMPLATE_DESCRIPTION			 Represents ProductTemplate.description for Dimension.PRODUCT_TEMPLATE_NAME.
+PRODUCT_PRODUCT_TEMPLATE_NAME			 Represents the product template's name of Dimension.PRODUCT_NAME.
+PRODUCT_RATE_TYPE				 Represents Product.rateType for Dimension.PRODUCT_NAME.
+PRODUCT_STATUS					 Represents Product.status for Dimension.PRODUCT_NAME.
+PRODUCT_TYPE_AND_PRIORITY			 Represents the line item type (if applicable) and line item priority (if applicable) of Dimension.PRODUCT_NAME.
+PRODUCT_PRODUCT_TYPE				 Represents the product type of Dimension.PRODUCT_NAME.
+PRODUCT_NOTES					 Represents Product.notes for .
+PROPOSAL_AGENCY_TYPE				 Represents the Company.type of Dimension.PROPOSAL_AGENCY_NAME.
+PROPOSAL_AGENCY_CREDIT_STATUS			 Represents the Company.creditStatus of Dimension.PROPOSAL_AGENCY_NAME.
+PROPOSAL_AGENCY_EXTERNAL_ID			 Represents Company.externalId for Dimension.PROPOSAL_AGENCY_NAME.
+PROPOSAL_AGENCY_COMMENT				 Represents Company.comment for Dimension.PROPOSAL_AGENCY_NAME.
+SALESPEOPLE_PROPOSAL_CONTRIBUTION		 Represents the Dimension.ALL_SALESPEOPLE_NAME's contribution to a Dimension.PROPOSAL_NAME. This is different from SALESPERSON_PROPOSAL_CONTRIBUTION as this will include both primary and secondary salespeople.
+SALESPERSON_PROPOSAL_CONTRIBUTION		 Represents the Dimension.SALESPERSON_NAME's contribution to a Dimension.PROPOSAL_NAME. See SALESPERSON_PROPOSAL_CONTRIBUTION.
+CONTENT_CMS_NAME				 Represents the CmsContent.displayName within the first element of Content.cmsContent for Dimension.CONTENT_NAME.
+CONTENT_CMS_VIDEO_ID				 Represents the CmsContent.cmsContentId within the first element of Content.cmsContent for Dimension.CONTENT_NAME.
+AD_UNIT_CODE					 Represents AdUnit.adUnitCode for Dimension.AD_UNIT_NAME.

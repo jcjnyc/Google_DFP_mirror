@@ -1,0 +1,168 @@
+MONTH_AND_YEAR	Breaks down reporting data by month and year in the network time zone. Can be used to filter on month using ISO 4601 format 'YYYY-MM'.
+WEEK		Breaks down reporting data by week of the year in the network time zone. Cannot be used for filtering.
+DATE		Breaks down reporting data by date in the network time zone. Can be used to filter by date using ISO 8601's format 'YYYY-MM-DD'".
+DAY		Breaks down reporting data by day of the week in the network time zone. Can be used to filter by day of the week using the index of the day (from 1 for Monday is 1 to 7 for Sunday).
+HOUR		Breaks down reporting data by hour of the day in the network time zone. Can be used to filter by hour of the day (from 0 to 23).
+LINE_ITEM_ID	Breaks down reporting data by LineItem.id. Can be used to filter by LineItem.id.
+LINE_ITEM_NAME	Breaks down reporting data by line item. LineItem.name and LineItem.id are automatically included as columns in the report. Can be used to filter by LineItem.name.
+LINE_ITEM_TYPE	Breaks down reporting data by LineItem.lineItemType. Can be used to filter by line item type using LineItemType enumeration names.
+ORDER_ID	Breaks down reporting data by Order.id. Can be used to filter by Order.id.
+ORDER_NAME	Breaks down reporting data by order. Order.name and Order.id are automatically included as columns in the report. Can be used to filter by Order.name.
+ADVERTISER_ID	Breaks down reporting data by advertising company Company.id. Can be used to filter by Company.id.
+ADVERTISER_NAME	Breaks down reporting data by advertising company. Company.name and Company.id are automatically included as columns in the report. Can be used to filter by Company.name.
+AD_NETWORK_ID	The network that provided the ad for SDK ad mediation.
+If selected for a report, that report will include only SDK mediation ads and will not contain non-SDK mediation ads.
+
+SDK mediation ads are ads for mobile devices. They have a list of ad networks which can provide ads to serve. Not every ad network will have an ad to serve so the device will try each network one-by-one until it finds an ad network with an ad to serve. The ad network that ends up serving the ad will appear here. Note that this id does not correlate to anything in the companies table and is not the same id as is served by ADVERTISER_ID.
+
+AD_NETWORK_NAME	  The name of the network defined in AD_NETWORK_ID.
+SALESPERSON_ID	  Breaks down reporting data by salesperson User.id. Can be used to filter by User.id.
+SALESPERSON_NAME  Breaks down reporting data by salesperson. User.name and User.id of the salesperson are automatically included as columns in the report. Can be used to filter by User.name.
+CREATIVE_ID	  Breaks down reporting data by Creative.id or creative set id (master's Creative.id) if the creative is part of a creative set. Can be used to filter by Creative.id.
+CREATIVE_NAME	  Breaks down reporting data by creative. Creative.name and Creative.id are automatically included as columns in the report. Can be used to filter by Creative.name.
+CREATIVE_TYPE	  Breaks down reporting data by creative type.
+CREATIVE_BILLING_TYPE	 Breaks down reporting data by creative billing type.
+CUSTOM_EVENT_ID		 Breaks down reporting data by custom event ID.
+CUSTOM_EVENT_NAME	 Breaks down reporting data by custom event name.
+CUSTOM_EVENT_TYPE	 Breaks down reporting data by custom event type (timer/exit/counter).
+CREATIVE_SIZE		 Breaks down reporting data by Creative.size. Cannot be used for filtering.
+AD_UNIT_ID		 Breaks down reporting data by AdUnit.id. Can be used to filter by AdUnit.id. AD_UNIT_NAME, i.e. AdUnit.name, is automatically included as a dimension in the report.
+AD_UNIT_NAME		 Breaks down reporting data by ad unit. AdUnit.name and AdUnit.id are automatically included as columns in the report. Can be used to filter by AdUnit.name.
+PARENT_AD_UNIT_ID	 Used to filter on all the descendants of an ad unit by AdUnit.id. Not available as a dimension to report on.
+PARENT_AD_UNIT_NAME	 Used to filter on all the descendants of an ad unit by AdUnit.name. Not available as a dimension to report on.
+PLACEMENT_ID		 Breaks down reporting data by Placement.id. Can be used to filter by Placement.id.
+PLACEMENT_NAME		 Breaks down reporting data by placement. Placement.name and Placement.id are automatically included as columns in the report. Can be used to filter by Placement.name.
+TARGETING		 Breaks down reporting data by criteria predefined by DoubleClick For Publishers like the operating system, browser etc. Cannot be used for filtering.
+DEVICE_CATEGORY_ID	 The ID of the device category to which an ad is being targeted. Can be used to filter by device category ID.
+DEVICE_CATEGORY_NAME	 The category of device (smartphone, feature phone, tablet, or desktop) to which an ad is being targeted. Can be used to filter by device category name.
+COUNTRY_CRITERIA_ID	 Breaks down reporting data by country criteria ID. Can be used to filter by country criteria ID.
+COUNTRY_NAME		 Breaks down reporting data by country name. The country name and the country criteria ID are automatically included as columns in the report. Can be used to filter by country name using the US English name.
+REGION_CRITERIA_ID	 Breaks down reporting data by region criteria ID. Can be used to filter by region criteria ID.
+REGION_NAME		 Breaks down reporting data by region name. The region name and the region criteria ID are automatically included as columns in the report. Can be used to filter by region name using the US English name.
+CITY_CRITERIA_ID	 Breaks down reporting data by city criteria ID. Can be used to filter by city criteria ID.
+CITY_NAME		 Breaks down reporting data by city name. The city name and the city criteria ID are automatically included as columns in the report. Can be used to filter by city name using the US English name.
+METRO_CRITERIA_ID	 Breaks down reporting data by metro criteria ID. Can be used to filter by metro criteria ID.
+METRO_NAME		 Breaks down reporting data by metro name. The metro name and the metro criteria ID are automatically included as columns in the report. Can be used to filter by metro name using the US English name.
+POSTAL_CODE_CRITERIA_ID	 Breaks down reporting data by postal code criteria ID. Can be used to filter by postal code criteria ID.
+POSTAL_CODE		 Breaks down reporting data by postal code. The postal code and the postal code criteria ID are automatically included as columns in the report. Can be used to filter by postal code.
+CUSTOM_TARGETING_VALUE_ID	Breaks down reporting data by CustomTargetingValue.id. Can be used to filter by CustomTargetingValue.id.
+CUSTOM_CRITERIA			Breaks down reporting data by custom criteria. The CustomTargetingValue is displayed in the form:
+car=honda when value match type is CustomTargetingValue.MatchType.EXACT
+car~honda when value match type is CustomTargetingValue.MatchType.BROAD
+car=*honda when value match type is CustomTargetingValue.MatchType.PREFIX
+car~*honda when value match type is CustomTargetingValue.MatchType.BROAD_PREFIX
+CUSTOM_TARGETING_VALUE_ID, i.e. CustomTargetingValue.id is automatically included as a column in the report. Cannot be used for filtering; use CUSTOM_TARGETING_VALUE_ID instead.
+When using this Dimension, metrics for freeform key values are only reported on when they are registered with CustomTargetingService.
+
+ACTIVITY_ID	Breaks down reporting data by activity ID. Can be used to filter by activity ID.
+ACTIVITY_NAME	Breaks down reporting data by activity. The activity name and the activity ID are automatically included as columns in the report. Can be used to filter by activity name.
+ACTIVITY_GROUP_ID      Breaks down reporting data by activity group ID. Can be used to filter by activity group ID.
+ACTIVITY_GROUP_NAME    Breaks down reporting data by activity group. The activity group name and the activity group ID are automatically included as columns in the report. Can be used to filter by activity group name.
+CONTENT_ID	       Breaks down reporting data by Content.id. Can be used to filter by Content.id.
+CONTENT_NAME	       Breaks down reporting data by content. Content.name and Content.id are automatically included as columns in the report. Can be used to filter by Content.name.
+CONTENT_BUNDLE_ID      Breaks down reporting data by ContentBundle.id. Can be used to filter by ContentBundle.id.
+CONTENT_BUNDLE_NAME    Breaks down reporting data by content bundle. ContentBundle.name and ContentBundle.id are automatically included as columns in the report. Can be used to filter by ContentBundle.name.
+CONTENT_HIERARCHY      Breaks down reporting data by the content hierarchy. To use this dimension, a list of custom targeting key IDs must be specified in ReportQuery.contentMetadataKeyHierarchyCustomTargetingKeyIds.
+This dimension can be used as a filter in the Statement in PQL syntax: CONTENT_HIERARCHY_CUSTOM_TARGETING_KEY[contentMetadataKeyHierarchyCustomTargetingKeyId]_ID = custom targeting value ID
+
+For example: WHERE CONTENT_HIERARCHY_CUSTOM_TARGETING_KEY[4242]_ID = 53423
+
+VIDEO_FALLBACK_POSITION						   Breaks down reporting data by the fallback position of the video ad, i.e., NON_FALLBACK, FALLBACK_POSITION_1, FALLBACK_POSITION_2, etc. Can be used for filtering.
+POSITION_OF_POD							   Breaks down reporting data by the position of the video ad within the video stream, i.e., UNKNOWN_POSITION, PREROLL, POSTROLL, UNKNOWN_MIDROLL, MIDROLL_1, MIDROLL_2, etc. UNKNOWN_MIDROLL represents a midroll, but which specific midroll is unknown. Can be used for filtering.
+POSITION_IN_POD							   Breaks down reporting data by the position of the video ad within the pod, i.e., UNKNOWN_POSITION, POSITION_1, POSITION_2, etc. Can be used for filtering.
+GRP_DEMOGRAPHICS						   Breaks down reporting data by gender and age group, i.e., MALE_13_TO_17, MALE_18_TO_24, MALE_25_TO_34, MALE_35_TO_44, MALE_45_TO_54, MALE_55_TO_64, MALE_65_PLUS, FEMALE_13_TO_17, FEMALE_18_TO_24, FEMALE_25_TO_34, FEMALE_35_TO_44, FEMALE_45_TO_54, FEMALE_55_TO_64, FEMALE_65_PLUS, UNKNOWN_0_TO_17 and UNKNOWN. Whenever this dimension is selected, COUNTRY_NAME must be selected.
+This dimension is supported only for GRP columns.
+
+AD_REQUEST_SIZE	  Size of the creative requested for an ad.
+AD_REQUEST_AD_UNIT_SIZES  Breaks down reporting data by the ad unit sizes specified in ad requests.
+Formatted as comma separated values, e.g. "300x250,300x250v,300x60".
+
+This dimension is supported only for sell-through columns.
+
+AD_REQUEST_CUSTOM_CRITERIA  Breaks down reporting data by the custom criteria specified in ad requests.
+Formatted as comma separated key-values, where a key-value is formatted as key=value_1,...,value_n.
+
+This dimension is supported only for sell-through columns.
+
+BUYER_ID       The unique identifier used for an ad network that is associated with the company that the ad is served for.
+BUYER_NAME     The name of the ad network that is associated with the company that the ad is served for.
+VERIFIED_ADVERTISER_ID	ID of the advertiser that filled the ad either directly (through DFP) or indirectly via Google Ad Exchange or another ad network or exchange.
+VERIFIED_ADVERTISER_NAME   Name of the advertiser that filled the ad either directly (through DFP) or indirectly via Google Ad Exchange or another ad network or exchange.
+MASTER_COMPANION_CREATIVE_ID	Breaks down reporting data by Creative.id. This includes regular creatives, and master and companions in case of creative sets.
+MASTER_COMPANION_CREATIVE_NAME	Breaks down reporting data by creative. This includes regular creatives, and master and companions in case of creative sets.
+DISTRIBUTION_PARTNER_ID		Breaks down reporting data by ID of the distribution partner.
+DISTRIBUTION_PARTNER_NAME	Breaks down reporting data by name of the distribution partner.
+CONTENT_PARTNER_ID		Breaks down reporting data by ID of the content partner.
+CONTENT_PARTNER_NAME		Breaks down reporting data by name of the content partner.
+RIGHTS_HOLDER_ID		Breaks down reporting data by ID of the rights holder.
+RIGHTS_HOLDER_NAME		Breaks down reporting data by name of the rights holder.
+PROPOSAL_LINE_ITEM_ID		Breaks down reporting data by ProposalLineItem.id. Can be used to filter by ProposalLineItem.id.
+PROPOSAL_LINE_ITEM_NAME		Breaks down reporting data by ProposalLineItem.name. Can be used to filter by ProposalLineItem.name.
+PROPOSAL_ID			Breaks down reporting data by Proposal.id. Can be used to filter by Proposal.id.
+PROPOSAL_NAME			Breaks down reporting data by Proposal.name. Can be used to filter by Proposal.name.
+ALL_SALESPEOPLE_ID		Breaks down reporting data by salesperson User.id, including both salesperson and secondary salespeople. Can be used to filter by all salespeople User.id.
+ALL_SALESPEOPLE_NAME		Breaks down reporting data by salesperson User.name, including both salesperson and secondary salespeople. Can be used to filter by all salespeople User.name.
+PROPOSAL_AGENCY_ID		Breaks down reporting data by proposal agency Company.id. Can be used to filter by proposal agency Company.id.
+PROPOSAL_AGENCY_NAME		Breaks down reporting data by proposal agency Company.name. Can be used to filter by proposal agency Company.name.
+PRODUCT_ID			Breaks down reporting data by Product.id. Can be used to filter by Product.id.
+PRODUCT_NAME			Breaks down reporting data by Product.name.
+PRODUCT_TEMPLATE_ID		Breaks down reporting data by ProductTemplate.id. Can be used to filter by ProductTemplate.id.
+PRODUCT_TEMPLATE_NAME		Breaks down reporting data by ProductTemplate.name. Can be used to filter by ProductTemplate.name.
+RATE_CARD_ID			Breaks down reporting data by RateCard.id. Can be used to filter by RateCard.id.
+RATE_CARD_NAME			Breaks down reporting data by RateCard.name. Can be used to filter by RateCard.name.
+WORKFLOW_ID			Used to filter by Workflow.id. Not available as a dimension to report on.
+WORKFLOW_NAME			Used to filter by Workflow.name. Not available as a dimension to report on.
+AUDIENCE_SEGMENT_ID		Breaks down reporting data by billable audience segment ID.
+AUDIENCE_SEGMENT_NAME		Breaks down reporting data by billable audience segment name.
+AUDIENCE_SEGMENT_DATA_PROVIDER_NAME    Breaks down reporting data by audience segment data provider name.
+AD_EXCHANGE_AD_SIZE_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange ad size. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_PLATFORM_TYPE_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange platforms. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_PRICING_RULE_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange pricing rules. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_TAG_NAME		       Breaks down linked Ad Exchange web property data by Ad Exchange tags. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_URL_CHANNEL_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange URLs. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_AD_CLIENT_ID	       Breaks down data by Ad Exchange linked web properties. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_CREATIVE_SIZES	       Breaks down linked Ad Exchange web property data by Ad Exchange creative size. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_AD_FORMAT_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange ad types. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_CHANNEL_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange channels. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_PRODUCT_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange products. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_SITE_NAME		       Breaks down linked Ad Exchange web property data by Ad Exchange sites. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_REQUEST_SOURCES	       Breaks down linked Ad Exchange web property data by Ad Exchange request sources. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_TRANSACTION_TYPE_NAME      Breaks down linked Ad Exchange web property data by Ad Exchange ad transaction. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_ADVERTISER_NAME	       Breaks down linked Ad Exchange web property data by the Ad Exchange advertiser name that bids on ads. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_AGENCY		       Breaks down linked Ad Exchange web property data by Ad Exchange agency. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_BID_TYPE		       Breaks down linked Ad Exchange web property data by Ad Exchange bid type. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_BRANDING_TYPE	       Breaks down linked Ad Exchange web property data by Ad Exchange branding type. Examples: Branded, Anonymous. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_BUYER_NETWORK_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange ad network name. Example: Google Adwords. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_DATE		       Breaks down linked Ad Exchange web property data by Ad Exchange date. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_DEAL_CPM		       Breaks down linked Ad Exchange web property data by Ad Exchange deal CPM cost. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_DEAL_ID		       Breaks down linked Ad Exchange web property data by Ad Exchange deal id. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_DEAL_NAME		       Breaks down linked Ad Exchange web property data by Ad Exchange deal name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_DEAL_TYPE		       Breaks down linked Ad Exchange web property data by Ad Exchange deal/transaction type. Example: Open auction. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_DSP_BUYER_NETWORK_NAME     Breaks down linked Ad Exchange web property data by Ad Exchange DSP buyer network name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_EXPANSION_TYPE	       Breaks down linked Ad Exchange web property data by Ad Exchange expansion type. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_COUNTRY_CODE	       Breaks down linked Ad Exchange web property data by Ad Exchange country code. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_COUNTRY_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange country name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_INVENTORY_OWNERSHIP	       Breaks down linked Ad Exchange web property data by Ad Exchange inventory ownership. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_LANDING_PAGE_DOMAIN	       Breaks down linked Ad Exchange web property data by Ad Exchange advertiser landing page domain. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_MOBILE_APP_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange mobile app name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_MOBILE_CARRIER_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange mobile carrier name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_MOBILE_DEVICE_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange mobile device name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_MOBILE_INVENTORY_TYPE      Breaks down linked Ad Exchange web property data by Ad Exchange mobile inventory type. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_MONTH		       Breaks down linked Ad Exchange web property data by Ad Exchange month. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_NETWORK_PARTNER_NAME       Breaks down linked Ad Exchange web property data by Ad Exchange partner name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_OS_VERSION_NAME	       Breaks down linked Ad Exchange web property data by Ad Exchange operating system version. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_PRICING_RULE_ID	       Breaks down linked Ad Exchange web property data by Ad Exchange pricing rule id. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_TAG_CODE		       Breaks down linked Ad Exchange web property data by Ad Exchange tags. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_TARGETING_TYPE	       Breaks down linked Ad Exchange web property data by Ad Exchange targeting type. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_THIRD_PARTY_BUYER_ACCOUNT_NAME    Breaks down linked Ad Exchange web property data by Ad Exchange third party buyer account name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_THIRD_PARTY_NETWORK_TAG_CURRENCY  Breaks down linked Ad Exchange web property data by Ad Exchange third-party network tag currency. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_THIRD_PARTY_NETWORK_TAG_NAME      Breaks down linked Ad Exchange web property data by Ad Exchange network tag name. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_URL_CHANNEL_ID		      Breaks down linked Ad Exchange web property data by Ad Exchange channel id. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_USER_BANDWIDTH_NAME		      Breaks down linked Ad Exchange web property data by Ad Exchange user bandwidth. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_VIDEO_AD_DURATION		      Breaks down linked Ad Exchange web property data by Ad Exchange video ad duration. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_VIDEO_AD_DURATION_RAW	      Breaks down linked Ad Exchange web property data by Ad Exchange raw video ad duration. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_VIDEO_AD_FORMAT		      Breaks down linked Ad Exchange web property data by Ad Exchange video ad type. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+AD_EXCHANGE_WEEK			      Breaks down linked Ad Exchange web property data by Ad Exchange week. This experimental dimension only works with Ad Exchange web properties linked with an active status.
+NIELSEN_OCR_SEGMENT			      Campaign date segment of Nielsen OCR reporting.
+NIELSEN_OCR_DEMOGRAPHICS		      Breaks down reporting data by gender and age group, i.e., MALE_18_TO_20, MALE_21_TO_24, MALE_25_TO_29, MALE_30_TO_35, MALE_35_TO_39, MALE_40_TO_44, MALE_45_TO_49, MALE_50_TO_54, MALE_55_TO_64, MALE_65_PLUS, FEMALE_18_TO_20, FEMALE_21_TO_24, FEMALE_25_TO_29, FEMALE_30_TO_34, FEMALE_35_TO_39, FEMALE_40_TO_44, FEMALE_45_TO_49, FEMALE_50_TO_54, FEMALE_55_TO_64, FEMALE_65_PLUS, and OTHER.
+NIELSEN_OCR_RESTATEMENT_DATE		      Data restatement date of Nielsen OCR data.
